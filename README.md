@@ -42,20 +42,45 @@ let versionNumber: Double = 1
 
 # Control operator: IF
 
-- One empty line before every if: ```↵if```.  
+- One empty line before every (including first in block) if: ```↵if```.  
+*This operator is very important, should be extra visible.*
+
+- One empty line after every (excluding last in block) if(else) block: ```if␣true␣{return}↵↵```.  
 *This operator is very important, should be extra visible.*
 
 - Use parenthesis only to improve legibility.  
 *Only logical monstrosities need that special treatment.*
 
+# Control operator: SWITCH
+
+- One empty line before every switch: ```↵switch```.  
+*This operator is very important, should be extra visible.*
+
+- One empty line before every switch block: ```switch variableName {↵ ... }↵↵```.  
+*This operator is very important, should be extra visible.*
+
+- Use parenthesis in ```case``` only to improve legibility.  
+*Only logical monstrosities need that special treatment.*
+
+- Indent (```␣␣␣␣```) every case section as it were block.  
+*To improve legibility.*
+
 **Example:**
 
 ```swift
-let someString = "toShowEmptyLine"
+println("flight: ")
+var flightNumber = 110
 
-if computer.authenticateWithPassword("pass") {
-    computer.openDoors("Some doors")
+switch flightNumber {
+case 0..<110:
+    println("is less than 110")
+case 110:
+    println("is 110")
+default:
+    println("some other")
 }
+
+println("end")
 ```
 
 # Protocol declaration
