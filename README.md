@@ -51,6 +51,18 @@ let versionNumber: Double = 1
 - Use parenthesis only to improve legibility.  
 *Only logical monstrosities need that special treatment.*
 
+**Example:**
+
+```swift
+let someString = "toShowEmptyLine"
+
+if computer.authenticateWithPassword("pass") {
+    computer.openDoors("Some doors")
+}
+
+println("toShowEmptyLine")
+```
+
 # Control operator: SWITCH
 
 - One empty line before every switch: ```↵switch```.  
