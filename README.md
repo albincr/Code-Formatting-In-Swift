@@ -79,19 +79,19 @@ protocol DoorOperator {
 
 # Class declaration
 
-- One space before and one after conformance colon: ```HAL9000␣:␣DoorOperator```.
+- One space before and one after conformance colon: ```HAL9000␣:␣DoorOperator```.  
 *To improve legibility and differentiate from other colon applications.*
 
-- One space before opening bracket ```␣{```.
+- One space before opening bracket ```␣{```.  
 *To improve legibility.*
 
-- One blank line separation from properties declaration and methods.
+- One blank line separation from properties declaration and methods.  
 *To provide visual separation.*
 
-- One blank line between methods declarations.
+- One blank line between methods declarations.  
 *To provide visual separation.*
 
-- Computed properties declarations shall be treated as methods.
+- Computed properties declarations shall be treated as methods.  
 *They act like methods. Should be treated as just a special case.*
 
 **Example:** 
