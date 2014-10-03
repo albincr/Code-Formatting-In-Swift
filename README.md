@@ -68,7 +68,7 @@ println("toShowEmptyLine")
 - One empty line before every switch: ```↵switch```.  
 *This operator is very important, should be extra visible.*
 
-- One empty line before every switch block: ```switch variableName {↵ ... }↵↵```.  
+- One empty line after every switch block: ```switch variableName {↵ ... }↵↵```.  
 *This operator is very important, should be extra visible.*
 
 - Use parenthesis in ```case``` only to improve legibility.  
@@ -139,7 +139,7 @@ class HAL9000 : DoorOperator {
     let softwareVersion = 2.1
 
     func openDoors(doors: String) -> String {
-        return ("\(debugDescription) v\(softwareVersion): Affirmative, Dave. I read you. Opened \(doors).")
+        return ("\(debugDescription) v\(softwareVersion): Affirmative. Opened \(doors).")
     }
 }
 
@@ -160,6 +160,7 @@ class CurrentComputer : DoorOperator {
         if pass != "pass" {
             return false
         }
+        
         computer = HAL9000()
 
         return true
