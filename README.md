@@ -11,7 +11,7 @@ Swift code formatting cheatshet.
 *TAB can be problematic, spaces have always the same width.*
 
 - Every block contents always indented.  
-*WHY: Helps with reading/scanning by providing visual hint.
+*Helps with reading/scanning by providing visual hint.*
 
 - First argument embedded in method name: ```openDoors(doors:```.  
 *Adopted from Cocoa/ObjectiveC - can save a bit of space.*
